@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ed Tech - Professional Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div id="login-modal" class="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50">
+        <div class="bg-white p-8 rounded-lg shadow-xl w-96 text-center">
+            <h2 class="text-2xl font-bold mb-4" data-en="Welcome to Ed Tech" data-ar="مرحباً بك في Ed Tech">مرحباً بك</h2>
+            <input type="text" placeholder="Username" class="w-full p-2 mb-4 border rounded">
+            <button onclick="login()" class="bg-blue-600 text-white w-full py-2 rounded hover:bg-blue-700">Login / دخول</button>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <nav class="bg-white shadow-lg p-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">Ed Tech</h1>
+            <button onclick="toggleLang()" class="bg-gray-200 px-3 py-1 rounded">AR / EN</button>
+        </nav>
+
+        <header class="bg-blue-900 text-white p-10 text-center">
+            <h1 class="text-4xl font-bold" data-en="High Quality, 40% Lower Cost" data-ar="جودة عالية، بتكلفة أقل 40%">جودة عالية بتكلفة مخفضة</h1>
+            <p class="mt-4" data-en="Master skills with our expert courses" data-ar="احترف مهاراتك مع دوراتنا المعتمدة">احترف مهاراتك مع دوراتنا المعتمدة</p>
+        </header>
+
+        <section class="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+                <h3 class="font-bold text-xl">Digital Marketing</h3>
+                <p class="text-gray-600">Price: 500 EGP</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+                <h3 class="font-bold text-xl">Game Development</h3>
+                <p class="text-gray-600">Price: 800 EGP</p>
+            </div>
+            </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
