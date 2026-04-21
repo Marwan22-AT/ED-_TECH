@@ -1,0 +1,4 @@
+/* إضافات لتنسيق الموقع */
+body { transition: all 0.3s ease; }
+#main-content { min-height: 100vh; }
+.bg-blue-900 { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('background-image.jpg'); background-size: cover; }
